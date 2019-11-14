@@ -1,6 +1,7 @@
 # Exploit Title: Nosql injection username/password enumeration
 # Auther: Kalana Sankalpa (Anon LK)
-# Website: https://www.widane.com
+# Websites: https://www.widane.com, https://blogofkalana.wordpress.com
+# Blogpost: https://blogofkalana.wordpress.com/2019/11/14/nosql-injection-username-and-password-enumeration/
 
 #!/usr/bin/python
 import string
