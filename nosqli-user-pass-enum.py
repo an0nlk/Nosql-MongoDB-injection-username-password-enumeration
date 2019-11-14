@@ -15,7 +15,6 @@ parser.add_argument("-up", action='store', metavar="parameter", help="Parameter 
 parser.add_argument("-pp", action='store', metavar="parameter", help="Parameter name of the password. Eg: password, pass")
 parser.add_argument("-op", action='store', metavar="parameters", help="Other paramters with the values. Separate each parameter with a comma(,). Eg: login:Login, submit:Submit")
 parser.add_argument("-ep", action='store', metavar="parameter", help="Parameter that need to enumerate. Eg: username, password")
-parser.add_argument("-sc", action='store', metavar="character", help="Character or letter that need to start from. Eg: a.b,c")
 parser.add_argument("-m", action='store', metavar="Method", help="Method of the form. Eg: GET/POST")
 args = parser.parse_args()
 
@@ -59,11 +58,6 @@ if args.op:
 	otherpara = "," + args.op
 else:
 	otherpara = ""
-
-if args.sc:
-	userpass = args.sc
-else:
-	userpass = ""
 
 def method(url, para):
 	if args.m:
