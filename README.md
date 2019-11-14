@@ -29,5 +29,4 @@ python nosqli-user-pass-enum.py -u http://example.com/index.php -up username -pp
 | -pp parameter | Parameter name of the password. Eg: password, pass      |
 | -op parameters | Other paramters with the values. Separate each parameter with a comma(,). <br />Eg: login:Login, submit:Submit      |
 | -ep parameter | Parameter that need to enumarate. Eg: username, password      |
-| -sc character | Character or letter that need to start from. Eg: a.b,c      |
 | -m Method | Method of the form. Eg: GET/POST      |
