@@ -60,6 +60,9 @@ if args.op:
 else:
 	otherpara = ""
 
+if args.m is None:
+	print(Fore.RED + "Warning: No method given. Using POST as the method. (You can give the method with -m)")
+	
 def method(url, para):
 	if args.m:
 		if args.m[0] == "p" or args.m[0] == "P":
