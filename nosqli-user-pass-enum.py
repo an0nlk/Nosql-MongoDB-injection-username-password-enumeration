@@ -108,7 +108,7 @@ for firstChar in characters:
 	count += 1;
 
 if finalout != "":
-	print("\n" + str(count) + " " + para1 + "() found:")
+	print("\n" + str(count) + " " + para1 + "(s) found:")
 	print(Fore.RED + finalout)
 else:
 	print(Fore.RED + "No " + para1 + " found")
