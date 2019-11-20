@@ -70,7 +70,6 @@ def method(url, para):
 			print(Fore.RED + "Error: Invalid method")
 			exit(0)
 	else:
-		print(Fore.RED + "Warning: using POST as the method. (You can give the method with -m)")
 		return requests.post(url, data=para, allow_redirects=False)
 
 characters = string.ascii_letters + string.digits + "!@#%()_=-`~[]\';/,<>:{}"
